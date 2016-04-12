@@ -1,6 +1,6 @@
 /**************************************************************************
 *
-*  Description: M-Bus communication driver header
+*  Description: M-Bus communication driver header    
 *
 *  Copyright (c) 2005-2009 by Govorukhin Alexey
 *
