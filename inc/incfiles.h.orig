@@ -1,0 +1,75 @@
+#ifndef _HEADERS_
+#define _HEADERS_
+
+#define _DEBUG_
+
+// #define DEBUG_OUT_INFO
+
+#include "const.h"
+
+#include <avr/io.h>
+#include <avr/pgmspace.h>
+#include <avr/eeprom.h>
+#if (HOST_ == WINDOWS_PC)
+#include <avr/signal.h>
+#include <avr/delay.h>
+#else
+#include <util/delay.h>
+#endif
+#include <avr/interrupt.h>
+#include <avr/wdt.h>
+
+
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+//#define _STRING_FUNC_
+
+#include "types.h"
+#include "init.h"
+#include "utils.h"
+#include "uart.h"
+
+#include "BankMemory.h"
+#include "nokia_lcd.h"
+#include "TextOut.h"
+#include "graph.h"
+
+#include "idep.h"
+#include "ide.h"
+#include "fat.h"
+
+#include "swtimerDefs.h"
+#include "swtimer.h"
+#include "TaskDefs.h"
+#include "tasks.h"
+#include "interrupts.h"
+#include "delay.h"
+#include "MMP3P.h"
+#include "Main.h"
+#include "Heap.h"
+#include "ViewWindow.h"
+#include "DirFileUtilities.h"
+#include "MainTasks.h"
+#include "vs1001k.h"
+#include "Cursor.h"
+#include "WhellButton.h"
+#include "Menu.h"
+#include "xmemtest.h"
+#include "GlobalMode.h"
+#include "PlayList.h"
+#include "Player.h"
+#include "MsgBox.h"
+//#include "unilink.h"
+#include "Config.h"
+#include "fcs.h"
+#include "MBus.h"
+#include "FileManager.h"
+
+
+
+#endif
+
+
+
