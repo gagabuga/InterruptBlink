@@ -20,29 +20,44 @@
 #define USB_VID 0x2341
 #define USB_PID 0x8036
 #define __cplusplus 201103L
-#define __AVR__
+#define GCC_VERSION 40801
 #define __inline__
 #define __asm__(x)
 #define __extension__
+//#define __ATTR_PURE__
+//#define __ATTR_CONST__
 #define __inline__
+//#define __asm__ 
 #define __volatile__
-#define GCC_VERSION 40801
+#define GCC_VERSION 40301
 #define volatile(va_arg) 
-#define _CONST
+#define __AVR__
+typedef void *__builtin_va_list;
 #define __builtin_va_start
 #define __builtin_va_end
+//#define __DOXYGEN__
 #define __attribute__(x)
 #define NOINLINE __attribute__((noinline))
 #define prog_void
 #define PGM_VOID_P int
-#ifndef __builtin_constant_p
-	#define __builtin_constant_p __attribute__((__const__))
-#endif
-#ifndef __builtin_strlen
-	#define __builtin_strlen  __attribute__((__const__))
-#endif
 #define NEW_H
-typedef void *__builtin_va_list;
+/*
+#ifndef __ATTR_CONST__
+#define __ATTR_CONST__ __attribute__((__const__))
+#endif
+
+#ifndef __ATTR_MALLOC__
+#define __ATTR_MALLOC__ __attribute__((__malloc__))
+#endif
+
+#ifndef __ATTR_NORETURN__
+#define __ATTR_NORETURN__ __attribute__((__noreturn__))
+#endif
+
+#ifndef __ATTR_PURE__
+#define __ATTR_PURE__ __attribute__((__pure__))
+#endif            
+*/
 typedef unsigned char byte;
 extern "C" void __cxa_pure_virtual() {;}
 

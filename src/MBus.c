@@ -2,7 +2,7 @@
 *
 *  Description: M-Bus communication driver
 *
-*  Copyright (c) 2005-2009 by Govorukhin Alexey
+*  Copyright (c) 2005-2009 by Govorukhin Alexey    
 *
 *  Redistribution and use in source and binary forms, with or without
 *  modification, are permitted provided that the following conditions
