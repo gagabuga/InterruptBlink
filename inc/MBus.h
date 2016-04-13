@@ -77,7 +77,7 @@
 #define MBUS_RX_INT_FAL     ( 1 << ISC11 )
 #define MBUS_RX_INT_RIS   ( ( 1 << ISC11 ) | ( 1 << ISC10 ) )
 #define MBUS_RX_INT_MSK   ( ( 1 << ISC11 ) | ( 1 << ISC10 ) )
-#define MBUS_RX_SIG_INT   SIG_INTERRUPT1
+#define MBUS_RX_SIG_INT   SIG_INTERRUPT1 //INT1_vect
 
 // RX Timer defines
 #define MBUS_RX_TIMER_TCCR    TCCR2

@@ -220,7 +220,7 @@ SIGNAL(MBUS_RX_SIG_INT)
         MBRProcess.bBitCounter++;                                     // count that bit
 
         MBUS_RX_EICR &= ~MBUS_RX_INT_MSK;                             // Clear previous settings
-        MBUS_RX_EICR |=  MBUS_RX_INT_FAL;                             // set Falling edge
+        MBUS_RX_EICR |=  d_FAL;                             // set Falling edge
         MBRProcess.bBitRecState = MBR_FALLING;                        // waiting for a falling edge
                                                                       // load a timer, to end a packet on timeout
         SWTLoad(SWT_MBUS_PACKET_TIMER, SWT_MBUS_PACKET_TIMER_VAL);
